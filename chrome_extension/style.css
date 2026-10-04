@@ -1,0 +1,39 @@
+#review-ai-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding: 15px;
+    z-index: 999999;
+    font-family: Arial, sans-serif;
+    animation: slideUp 0.3s ease;
+}
+
+#review-ai-box h2 {
+    margin-top: 0;
+}
+
+#review-ai-box p {
+    font-size: 14px;
+}
+
+#review-ai-box button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
